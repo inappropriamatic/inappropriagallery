@@ -1,0 +1,20 @@
+inappropriagallery
+
+This is a local server hosting your own personal picture gallery, with the option to post those images directly to Tumblr.  This is good skimming those large collections you have sitting around.
+
+Start it running and point your browser to localhost:8014 to see your gallery.  Click the right "Reload" button to load different images.  If you find one you like, click on it to get a caption box and the option to submit it to your tumblr.
+
+gallery.py -- The command line version.  Run it as
+
+    python gallery.py /path/to/your/pictures 10 inappropriamatic@gmail.com hunter2
+    
+Where /path/to/your/pictures is a directory, and 10 is the number of images you want on the page at a time.  I didn't bother to bounds check that (lazy, I know), so make sure that number is less than the number of pictures you have.  The email address and password are optional, but you can't submit to tumblr without them.
+
+If that sounds like too much work, you always have
+
+gallerygui.py -- The graphical version.
+
+This version will prompt you with dialog boxes for each of those parameters, and then launch your browser for you.
+
+
+inappropriamatic@gmail.com
